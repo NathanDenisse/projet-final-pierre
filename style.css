@@ -1,0 +1,128 @@
+
+canvas {
+  display: block;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e0fbfc;
+  color: black;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+li {
+  /* Enlever les effets gras, souligné etc... */
+  text-decoration: none;
+  /* Enlève les puces */
+  list-style: none;
+  display: inline-block;
+
+  /* espacer les liens entre eux */
+  padding: 0px 20px;
+}
+
+.header {
+  /* Afficher les éléments les uns à côté des autres */
+  display: flex;
+
+  align-items: center;
+
+  /* espacer les liens et la photo */
+  justify-content: space-between;
+
+  padding: 10px 10%;
+
+  background: #98c1d9;
+}
+
+#presentation {
+  border: solid;
+  /* centrer le text */
+  padding: 110px 20px;
+  /* centrer le cercle */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* Mettre le cercle à la moitié de la page */
+  height: 50vh;
+  width: 50vh;
+  /* Arrondir les angles */
+  border-radius: 100%;
+  background: #E0FBFC;
+
+  transition: background 5s;
+}
+
+#presentation:hover {
+  background: rgb(255, 106, 0)
+}
+
+h1 {
+  margin: 30px;
+}
+
+#image1 {
+  background: url("./plage.jpg");
+  height: 400px;
+  /* permet de voir l'image en entier */
+  background-size: cover;
+  /* fixe l'image */
+  background-attachment: fixed;
+  padding: 190px 0;
+  font-weight: 800;
+  font-size: 35px;
+}
+#image2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./basket.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding: 120px 0;
+  height: 800px;
+  font-weight: 800;
+  font-size: 35px;
+}
+
+#corps {
+  margin-top: -30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: linear-gradient(#98c1d9, #07bec7);
+}
+
+#profil {
+  border-radius: 100%;
+  clip-path: ellipse(50% 33%);
+  width: 90px;
+  padding-bottom: 5px;
+  transition-duration: 10s;
+}
+
+#profil:hover {
+  width: 1000px;
+}
+
+a {
+  transition: 0.5s
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+}
